@@ -1,0 +1,32 @@
+.background-section{
+    background-image: url('../img/login_background.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.card{
+    /* background-color: rgba(129, 18, 233, 0.6); */
+    background-color: rgba(0, 116, 116, 0.7);
+}
+.social-icon a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: transparent;
+    border: 2px solid #00ffee;
+    font-size: 2rem;
+    border-radius: 50%;
+    color:#00ffee;
+    margin: 1rem 1rem 1rem 0;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+}
+.social-icon a:hover{
+    color: #00ffee;
+    transform: scale(1)translateY(-5px);
+    box-shadow: 0 0 25px #00ffee;
+}
