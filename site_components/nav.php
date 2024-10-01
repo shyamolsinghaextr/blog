@@ -33,6 +33,10 @@
                         <a class="nav-link" href="http://localhost/blog/contact.php">Contact</a>
                     </li>
 					
+					<li class="nav-item">
+                        <a class="nav-link" href="http://localhost/blog/login.php">Login</a>
+                    </li>
+					
                 </ul>
             </div>
         </div>

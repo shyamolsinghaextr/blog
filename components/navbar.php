@@ -1,16 +1,13 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Dashboard</a>
+        <a class="navbar-brand" href="http://localhost/blog/" target = "_blank">Site Visit</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="http://localhost/CMS/profile.php">Profile</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="http://localhost/CMS/logout.php">LogOut</a>
+                    <a class="nav-link" href="http://localhost/blog/logout.php">LogOut</a>
 					
                 </li>
             </ul>

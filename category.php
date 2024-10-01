@@ -18,14 +18,17 @@
 		<?php
 		
 			foreach ($posts as $post) {
+				
+				$post_content = implode(' ', array_slice(explode(' ', strip_tags($post['post'])), 0, 30));
+				
 				echo "
 					<div class='col-md-4 mb-4'>
 						<div class='card blog-post'>
 							<img src='https://via.placeholder.com/400x200' class='card-img-top' alt='Blog Post Image'>
 							<div class='card-body'>
 								<h5 class='card-title'>".$post['post_head']."</h5>
-								<p class='card-text'>A brief description of the blog post goes here. Learn more about the topic.</p>
-								<a href='http://localhost/blog/post.php?id=".$post['id']."' target = '_blank' class='btn btn-primary'>Read More</a>
+								<p class='card-text'>".$post_content."...</p>
+								<a href='http://localhost/blog/post.php?id=".$post['id']."' target='_blank' class='btn btn-primary'>Read More</a>
 							</div>
 						</div>
 					</div>
