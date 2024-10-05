@@ -1,5 +1,4 @@
 <?php 
-session_start();
 require_once('db_connection.php');
 include 'components/head.php';
 include 'components/navbar.php';
@@ -36,7 +35,7 @@ include 'components/sitebar.php';
 					<td>
 						<a href='post_edit.php?id=".$post['id']."' class='btn btn-primary btn-sm'>Edit</a>
 						<a href='post_delete.php?id=".$post['id']."' class='btn btn-danger btn-sm'>Delete</a>
-						<a href='post.php?id=".$post['id']."' target='_blank' class='btn btn-success btn-sm'>View</a>
+						<a href='post_view.php?id=".$post['id']."' target='_blank' class='btn btn-success btn-sm'>View</a>
 					</td>
 				</tr>
 				";

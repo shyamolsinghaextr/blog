@@ -43,7 +43,7 @@
 			$user = mysqli_fetch_all($result, MYSQLI_ASSOC);
 			foreach ($user as $user_data) {
 				echo "Login successful. Welcome ".$user_data['name']."<br>";
-				$_SESSION["Login"] = "logged in";
+				$_SESSION["Login_Status"] = "logged in";
 				$_SESSION["UserID"] = $user_data['id'];
 				header("Location: dashboard.php");
 			}

@@ -8,5 +8,6 @@
 </head>
 <body>
 <?php 
-	//if(!isset($_SESSION["Login"])){ header("Location: index.php");} 
+	session_start();
+	if(!isset($_SESSION["Login_Status"])){ header("Location: index.php");} 
 ?>

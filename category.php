@@ -28,7 +28,7 @@
 							<div class='card-body'>
 								<h5 class='card-title'>".$post['post_head']."</h5>
 								<p class='card-text'>".$post_content."...</p>
-								<a href='http://localhost/blog/post.php?id=".$post['id']."' target='_blank' class='btn btn-primary'>Read More</a>
+								<a href='http://localhost/blog/post_view.php?id=".$post['id']."' target='_blank' class='btn btn-primary'>Read More</a>
 							</div>
 						</div>
 					</div>

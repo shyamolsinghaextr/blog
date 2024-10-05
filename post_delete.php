@@ -1,6 +1,4 @@
 <?php 
-
-	session_start();
 	require_once('db_connection.php');
 	include 'components/head.php';
 	include 'components/navbar.php';

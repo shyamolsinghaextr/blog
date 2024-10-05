@@ -8,7 +8,7 @@
                 <a class="nav-link text-white" href="http://localhost/blog/dashboard.php">Dashboard</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white" href="http://localhost/blog/posts.php">Posts List</a>
+                <a class="nav-link text-white" href="http://localhost/blog/post_list.php">Posts List</a>
             </li>
 			<li class="nav-item">
                 <a class="nav-link text-white" href="http://localhost/blog/post_create.php">Post Create</a>
