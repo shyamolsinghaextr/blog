@@ -1,8 +1,11 @@
 <?php 
 require_once('db_connection.php');
 include 'components/head.php';
+if($_SESSION["Role"] == 'editor'){header("Location: dashboard.php");}
 include 'components/navbar.php';
 include 'components/sitebar.php';
+
+
 ?>
 
 <!DOCTYPE html>

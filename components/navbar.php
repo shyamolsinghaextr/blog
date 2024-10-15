@@ -14,10 +14,3 @@
         </div>
     </div>
 </nav>
-
-<?php
-
-	function logout(){
-		session_destroy();
-	}
-?>

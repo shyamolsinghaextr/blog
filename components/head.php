@@ -9,5 +9,5 @@
 <body>
 <?php 
 	session_start();
-	if(!isset($_SESSION["Login_Status"])){ header("Location: index.php");} 
+	if($_SESSION["Role"] != 'admin' AND $_SESSION["Role"] != 'editor'){ header("Location: index.php");} 
 ?>

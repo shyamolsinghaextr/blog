@@ -31,3 +31,8 @@
 </head>
 
 <body>
+
+<?php 
+	session_start();
+	if(!isset($_SESSION["Login_Status"])){ header("Location: login.php");} 
+?>

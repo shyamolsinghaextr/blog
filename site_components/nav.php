@@ -34,7 +34,7 @@
                     </li>
 					
 					<li class="nav-item">
-                        <a class="nav-link" href="http://localhost/blog/login.php">Login</a>
+                        <a class="nav-link" href="http://localhost/blog/logout.php">Logout</a>
                     </li>
 					
                 </ul>

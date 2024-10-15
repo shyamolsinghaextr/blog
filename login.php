@@ -42,10 +42,17 @@
 			$result = mysqli_query($conn, $sql); 
 			$user = mysqli_fetch_all($result, MYSQLI_ASSOC);
 			foreach ($user as $user_data) {
-				echo "Login successful. Welcome ".$user_data['name']."<br>";
 				$_SESSION["Login_Status"] = "logged in";
 				$_SESSION["UserID"] = $user_data['id'];
-				header("Location: dashboard.php");
+				$_SESSION["Role"] = $user_data['Role'];
+				
+				if($user_data['Role'] == 'admin' or $user_data['Role'] == 'editor'){
+					header("Location: dashboard.php");
+				}
+				
+				if($user_data['Role'] == 'user'){
+					header("Location: index.php");
+				}
 			}
 			
 		}

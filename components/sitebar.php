@@ -10,9 +10,16 @@
             <li class="nav-item">
                 <a class="nav-link text-white" href="http://localhost/blog/post_list.php">Posts List</a>
             </li>
-			<li class="nav-item">
-                <a class="nav-link text-white" href="http://localhost/blog/post_create.php">Post Create</a>
-            </li>
+			
+			<?php
+				if($_SESSION["Role"] != 'editor'){
+					echo '
+						<li class="nav-item">
+							<a class="nav-link text-white" href="http://localhost/blog/post_create.php">Post Create</a>
+						</li>
+					';
+				}
+			?>
         </ul>
     </div>
 
